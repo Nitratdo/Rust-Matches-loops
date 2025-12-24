@@ -11,7 +11,7 @@ fn main() {
         5 => println!("Quinta"),
         6 => println!("Sexta"),
         7 => println!("Sabado"),
-        _=> println!("Dia invalido"),
+        _ => println!("Dia invalido"),
         // Aqui a gente vai descartar qualquer dia da semana que passe de 7 dias semanais
     };
 // ============================================== Desafio 2 — match com intervalos ==============================================
@@ -21,8 +21,8 @@ fn main() {
     // Aqui vamos comparar se a foi ruim, média ou boa;
     let resultado = match nota {
         0..=4 => "Reprovado",
-        4..=5 => "Recuperação",
-        6..=10 => "Aprovado",
+        5..=6 => "Recuperação",
+        7..=10 => "Aprovado",
         _ => "Nota invalida", 
         // Aqui usamos esse _ como else;
     };
@@ -38,7 +38,7 @@ fn main() {
 
     let mut contador = 5;
 
-    while contador < 0 {
+    while contador > 0 {
         println!("contador: {}", contador);
         contador -= 1;
     }
